@@ -15,16 +15,16 @@ function App() {
             <section>
                <Banner />
             </section>
-            <section>
+            <section id="about">
                <AboutMe />
             </section>
             <section>
                <SkillsSection />
             </section>
-            <section>
+            <section id="project">
                <Projects />
             </section>
-            <section>
+            <section id="contact">
                <ContactSection />
             </section>
          </div>

@@ -5,7 +5,7 @@ const navLinks = (
       <li>
          <a
             className={
-               "text-lg !font-nunito rounded-lg hover:text-primary hover:bg-transparent px-8"
+               "text-lg !font-nunito rounded-lg hover:text-primary hover:bg-transparent px-3 xl:px-8"
             }
          >
             Home
@@ -13,8 +13,9 @@ const navLinks = (
       </li>
       <li>
          <a
+            href="#project"
             className={
-               "text-lg !font-nunito rounded-lg hover:text-primary hover:bg-transparent px-8"
+               "text-lg !font-nunito rounded-lg hover:text-primary hover:bg-transparent px-3 xl:px-8"
             }
          >
             Projects
@@ -22,8 +23,9 @@ const navLinks = (
       </li>
       <li>
          <a
+            href="#about"
             className={
-               "text-lg !font-nunito rounded-lg hover:text-primary hover:bg-transparent px-8"
+               "text-lg !font-nunito rounded-lg hover:text-primary hover:bg-transparent px-3 xl:px-8"
             }
          >
             About
@@ -31,6 +33,7 @@ const navLinks = (
       </li>
       <li>
          <a
+            href="#contact"
             className={
                "text-lg !font-nunito rounded-lg hover:text-primary hover:bg-transparent"
             }
@@ -43,7 +46,7 @@ const navLinks = (
 
 const Navbar = () => {
    return (
-      <div className="bg-[#04031171] shadow-lg border-b border-b-[#0d0b32] py-4">
+      <div className="bg-[#040311be] shadow-lg border-b border-b-[#0d0b32] py-4">
          <div className="container mx-auto navbar ">
             <div className="navbar-start">
                <div className="dropdown">
@@ -87,7 +90,9 @@ const Navbar = () => {
                </a>
             </div>
             <div className="navbar-end hidden lg:flex">
-               <ul className="menu menu-horizontal px-1 mr-10">{navLinks}</ul>
+               <ul className="menu menu-horizontal px-1 mr-3 xl:mr-10">
+                  {navLinks}
+               </ul>
                <div className="">
                   <a
                      href="https://docs.google.com/document/d/1b72mBPDA6joiI7iZyVKUYCi1l69ujACCrgiVjcptqpA/edit?usp=sharing"

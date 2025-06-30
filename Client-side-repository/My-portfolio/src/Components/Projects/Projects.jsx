@@ -8,7 +8,9 @@ const Projects = () => {
    useEffect(() => {
       const fetchProjects = async () => {
          try {
-            const response = await axios.get("http://localhost:5000/projects");
+            const response = await axios.get(
+               "https://portfolio-md-istiake.vercel.app/projects"
+            );
             const data = await response.data;
             setProjectsData(data);
          } catch (error) {

@@ -7,7 +7,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaRegFileAlt } from "react-icons/fa";
 
 const getProfileData = async () => {
-   const res = await axios.get("http://localhost:5000/profileInfo");
+   const res = await axios.get(
+      "https://portfolio-md-istiake.vercel.app/profileInfo"
+   );
    return res.data;
 };
 
@@ -35,14 +37,14 @@ const Banner = () => {
    }, []);
    return (
       <div className="hero min-h-[70vh]">
-         <div className="container w-full mx-auto grid grid-cols-2 ">
-            <div className="order-last flex justify-end">
+         <div className="container w-full mx-auto grid grid-cols-1 lg:grid-cols-2 ">
+            <div className="order-first flex justify-end lg:order-last">
                <img
                   src={image}
-                  className="max-w-lg rounded-full aspect-square object-cover ring-4 ring-primary"
+                  className="max-w-md xl:max-w-lg rounded-full aspect-square object-cover ring-4 ring-primary"
                />
             </div>
-            <div className="order-first flex flex-col justify-center">
+            <div className="order-last flex flex-col justify-center lg:order-first">
                <p className="text-2xl !font-nunito font-bold text-neutral-500 mb-2">
                   Hello, I am
                </p>

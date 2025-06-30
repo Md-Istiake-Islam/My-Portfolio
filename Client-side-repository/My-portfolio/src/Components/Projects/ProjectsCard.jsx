@@ -17,11 +17,11 @@ const ProjectsCard = ({ project, index }) => {
    } = project;
 
    return (
-      <div className="flex flex-col md:flex-row gap-10 bg-[#020D22] rounded-xl shadow-md overflow-hidden p-6 md:p-10 border border-[#1b2538]">
+      <div className="flex flex-col lg:flex-row gap-10 bg-[#020D22] rounded-xl shadow-md overflow-hidden p-6 md:p-10 border border-[#1b2538]">
          {/* Left: Image */}
          <div
-            className={`md:w-1/2 w-full ${
-               index % 2 === 0 ? "order-1" : "order-2"
+            className={`lg:w-1/2 w-full ${
+               index % 2 === 0 ? "lg:order-1" : "lg:order-2"
             }`}
          >
             <img
@@ -33,8 +33,8 @@ const ProjectsCard = ({ project, index }) => {
 
          {/* Right: Content */}
          <div
-            className={`md:w-1/2 w-full flex flex-col justify-center ${
-               index % 2 === 0 ? "order-2" : "order-1"
+            className={`lg:w-1/2 w-full flex flex-col justify-center ${
+               index % 2 === 0 ? "lg:order-2" : "lg:order-1"
             }`}
          >
             {/* Title */}

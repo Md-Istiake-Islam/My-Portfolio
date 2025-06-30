@@ -65,7 +65,7 @@ const SkillsSection = () => {
          </div>
 
          {/* Skill Cards */}
-         <div className="container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6  mx-auto bg-[#020D22] px-26 py-16 rounded-lg border border-[#1b2538]">
+         <div className="container grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6  mx-auto bg-[#020D22] px-26 py-16 rounded-lg border border-[#1b2538]">
             {skills.map((skill, idx) => (
                <div
                   key={idx}

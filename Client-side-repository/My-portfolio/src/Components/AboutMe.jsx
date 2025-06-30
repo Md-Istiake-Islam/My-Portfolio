@@ -1,4 +1,3 @@
-import { div } from "motion/react-client";
 import React from "react";
 import AsideImg from "../assets/About-aside-Img.png";
 
@@ -6,8 +5,8 @@ const AboutMe = () => {
    return (
       <div>
          <section className="container mx-auto px-4 py-12">
-            <div className="grid grid-cols-2 gap-20">
-               <div className="pt-20 ">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+               <div className="pt-20 hidden lg:block">
                   <img
                      src={AsideImg}
                      alt=""
