@@ -91,8 +91,8 @@ const ProjectsCard = ({ project, index }) => {
             {/* You can open the modal using document.getElementById('ID').showModal() method */}
 
             <dialog id="my_modal_4" className="modal">
-               <div className="modal-box w-11/12 max-w-5xl">
-                  <div className="bg-[#0f0f0f] text-white rounded-xl overflow-hidden shadow-lg max-w-3xl mx-auto border border-[#1a9fff]">
+               <div className="modal-box w-11/12 max-w-5xl bg-[#020D22]">
+                  <div className="bg-[#06264579] text-white rounded-xl overflow-hidden shadow-lg max-w-3xl mx-auto border border-[#1b2538]">
                      {/* Project Image */}
                      <img
                         src={image_url}
