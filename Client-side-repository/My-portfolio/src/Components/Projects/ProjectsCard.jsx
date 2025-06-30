@@ -13,6 +13,7 @@ const ProjectsCard = ({ project, index }) => {
       live_link,
       challenges_faced,
       future_plans,
+      main_features,
    } = project;
 
    return (
