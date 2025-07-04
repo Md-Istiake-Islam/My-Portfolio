@@ -4,6 +4,7 @@ const navLinks = (
    <>
       <li>
          <a
+            href="#home"
             className={
                "text-lg !font-nunito rounded-lg hover:text-primary hover:bg-transparent px-3 xl:px-8"
             }

@@ -12,7 +12,7 @@ function App() {
             <section className="sticky top-0 z-50">
                <Navbar />
             </section>
-            <section>
+            <section id="home">
                <Banner />
             </section>
             <section id="about">
